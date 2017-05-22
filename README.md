@@ -1,4 +1,4 @@
-# `generator-ng-flash` [![Build Status](https://travis-ci.org/umayr/generator-ng-flash.svg?branch=master)](https://travis-ci.org/umayr/generator-ng-flash)
+# `generator-ng-flash` [![Build Status](https://api.travis-ci.org/Sharique-Hasan/generator-ng-flash.svg?branch=master)](https://travis-ci.org/Sharique-Hasan/generator-ng-flash)
 > Yeoman generator for Angular 1.x powered by Webpack.
 
 ### Usage
@@ -235,7 +235,7 @@ To create a build:
 ```
 The MIT License (MIT)
 
-Copyright (c) 2015 Umayr Shahid <umayrr@hotmail.co.uk> (https://bandooqwala.com)
+Copyright (c) 2017 Sharique Hasan <shssuetce@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
