@@ -1,17 +1,17 @@
-# `generator-ng-bat` [![Build Status](https://travis-ci.org/umayr/generator-ng-bat.svg?branch=master)](https://travis-ci.org/umayr/generator-ng-bat)
+# `generator-ng-flash` [![Build Status](https://travis-ci.org/umayr/generator-ng-flash.svg?branch=master)](https://travis-ci.org/umayr/generator-ng-flash)
 > Yeoman generator for Angular 1.x powered by Webpack.
 
 ### Usage
 
 ```bash
   # install yeoman and generator globally
-  $ npm install -g yo generator-ng-bat
+  $ npm install -g yo generator-ng-flash
   
   # create an empty directory
   $ mkdir dummy && cd $_
   
   # invoke generator
-  $ yo ng-bat
+  $ yo ng-flash
 ```
 
 ### Features
@@ -32,10 +32,10 @@ with a minor addition of stylesheets being included in the module directory.
 │       ├── app.module.js
 │       ├── common
 │       │   ├── common.module.js
-│       │   └── common.scss
+│       │   └── common.less
 │       ├── core
 │       │   ├── core.module.js
-│       │   ├── core.scss
+│       │   ├── core.less
 │       │   ├── restangular.config.js
 │       │   ├── router.config.js
 │       │   └── router.run.js
@@ -43,7 +43,7 @@ with a minor addition of stylesheets being included in the module directory.
 │           ├── welcome.controller.js
 │           ├── welcome.html
 │           ├── welcome.module.js
-│           └── welcome.scss
+│           └── welcome.less
 ├── LICENSE
 ├── package.json
 └── webpack.config.js
@@ -74,7 +74,7 @@ While generator creates an app structure, sub-generators create parts of app for
 
 Invoked by: 
 ```bash
-  $ yo ng-bat:controller dashboard.user
+  $ yo ng-flash:controller dashboard.user
 ```
 Creates a `user.controller.js` file in the `dashboard` module:
 ```javascript
@@ -102,13 +102,13 @@ function controller($log) {
 
 When provided with flag `--with-view`, it also creates a view with same name in the provided module:
 ```bash
-  $ yo ng-bat:controller dashboard.user --with-view
+  $ yo ng-flash:controller dashboard.user --with-view
 ```
 ##### Factory:
 
 Invoked by:
 ```bash
-  $ yo ng-bat:factory dashboard.utils
+  $ yo ng-flash:factory dashboard.utils
 ```
 Creates a `utils.factory.js` in the `dashboard` module:
 ```javascript
@@ -131,7 +131,7 @@ function factory($log) {
 ##### View:
 Invoked by:
 ```bash
-  $ yo ng-bat:view dashboard.nav
+  $ yo ng-flash:view dashboard.nav
 ```
 Creates a `nav.html` file in the `dashboard` module:
 ```html
@@ -143,7 +143,7 @@ Creates a `nav.html` file in the `dashboard` module:
 
 Invoked by:
 ```bash
-  $ yo ng-bat:directive common.ui-submit
+  $ yo ng-flash:directive common.ui-submit
 ```
 Creates a `uiSubmit.directive.js` file in `common` module:
 
@@ -176,7 +176,7 @@ function directive($log) {
 
 Invoked by:
 ```bash
-  $ yo ng-bat:filter common.currency 
+  $ yo ng-flash:filter common.currency 
 ```
 
 Creates a `currency.filter.js` file in the `common` module:
@@ -197,7 +197,7 @@ function filter() {
 
 Invoked by:
 ```bash
-  $ yo ng-bat:constant common.http-codes
+  $ yo ng-flash:constant common.http-codes
 ```
 
 Creates a `httpCodes.constant.js` file in the `common` module:
@@ -213,7 +213,7 @@ module.exports = {
 
 Invoked by:
 ```bash
-  $ yo ng-bat:value common.messages
+  $ yo ng-flash:value common.messages
 ```
 
 Creates a `messages.value.js` file in the `common` module:
