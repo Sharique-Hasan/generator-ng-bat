@@ -1,6 +1,6 @@
 {
   "name": "generator-ng-flash",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Generator to bootstrap Angular 1.x apps powered by webpack",
   "homepage": "https://github.com/Sharique-Hasan/generator-ng-flash",
   "author": {
