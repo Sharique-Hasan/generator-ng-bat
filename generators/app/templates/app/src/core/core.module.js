@@ -7,6 +7,8 @@ var name = module.exports = '<%= name %>.core';
 // Fix to make restangular work with webpack since it doesn't support common js.
 // For more info: https://github.com/mgonto/restangular/issues/749
 require('restangular');
+require('angular-ui-bootstrap');
+require('angular-toastr');
 
 angular
   .module(name, [
