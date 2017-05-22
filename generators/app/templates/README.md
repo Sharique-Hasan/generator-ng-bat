@@ -1,12 +1,9 @@
-# `ng-supack`
+# `ng-flash`
 > Yet another minimal seed app for Angular 1.x powered by Webpack.
 
 ### Usage
 
 ```bash
-  # clone the application and change directory
-  $ git clone https://github.com/umayr/ng-supack.git && cd $_ 
-  
   # install dependencies
   $ npm install
   
@@ -32,10 +29,10 @@ with a minor addition of stylesheets being included in the module directory.
 │       ├── app.module.js
 │       ├── common
 │       │   ├── common.module.js
-│       │   └── common.scss
+│       │   └── common.less
 │       ├── core
 │       │   ├── core.module.js
-│       │   ├── core.scss
+│       │   ├── core.less
 │       │   ├── restangular.config.js
 │       │   ├── router.config.js
 │       │   └── router.run.js
@@ -43,7 +40,7 @@ with a minor addition of stylesheets being included in the module directory.
 │           ├── welcome.controller.js
 │           ├── welcome.html
 │           ├── welcome.module.js
-│           └── welcome.scss
+│           └── welcome.less
 ├── LICENSE
 ├── package.json
 └── webpack.config.js
