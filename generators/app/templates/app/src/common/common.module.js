@@ -1,6 +1,6 @@
 'use strict';
 
-require('./common.scss');
+require('./common.less');
 
 var name = module.exports = '<%= name %>.common';
 

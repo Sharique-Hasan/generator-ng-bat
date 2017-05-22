@@ -30,16 +30,16 @@ describe('generator-ng-bat:app', function () {
       'app/images/webpack.png',
       'app/src/app.module.js',
       'app/src/common/common.module.js',
-      'app/src/common/common.scss',
+      'app/src/common/common.less',
       'app/src/core/core.module.js',
-      'app/src/core/core.scss',
+      'app/src/core/core.less',
       'app/src/core/restangular.config.js',
       'app/src/core/router.config.js',
       'app/src/core/router.run.js',
       'app/src/welcome/welcome.controller.js',
       'app/src/welcome/welcome.html',
       'app/src/welcome/welcome.module.js',
-      'app/src/welcome/welcome.scss'
+      'app/src/welcome/welcome.less'
     ]);
   });
 

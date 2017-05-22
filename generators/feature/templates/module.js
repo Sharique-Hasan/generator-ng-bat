@@ -1,6 +1,6 @@
 'use strict';
 
-require('./<%= feature %>.scss');
+require('./<%= feature %>.less');
 
 var name = module.exports = '<%= name %>.<%= feature %>';
 

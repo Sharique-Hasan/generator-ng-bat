@@ -47,8 +47,8 @@ module.exports = yeoman.generators.Base.extend({
     );
 
     this.fs.copyTpl(
-      this.templatePath('styles.scss'),
-      this.destinationPath(format('%s/%s/%s.scss', this.props.root, this.props.feature, this.props.feature)),
+      this.templatePath('styles.less'),
+      this.destinationPath(format('%s/%s/%s.less', this.props.root, this.props.feature, this.props.feature)),
       {
         feature: this.props.feature
       }

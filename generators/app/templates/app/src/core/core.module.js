@@ -1,6 +1,6 @@
 'use strict';
 
-require('./core.scss');
+require('./core.less');
 
 var name = module.exports = '<%= name %>.core';
 
@@ -11,14 +11,41 @@ require('restangular');
 angular
   .module(name, [
     require('angular-ui-router'),
+    'ui.bootstrap',
+    'toastr',
     'restangular'
   ])
   .config(require('./restangular.config.js'))
   .config(require('./router.config.js'))
   .run(require('./router.run.js'))
+  .config(function ($httpProvider) {
+    $httpProvider.interceptors.push('requestInterceptor');
+  })
+  .factory('requestInterceptor', requestInterceptor)
 ;
 
+function requestInterceptor($q) {
+  return {
+    request: function(config) {
+      return config;
+    },
 
+    requestError: function(config) {
+      return config;
+    },
+
+    response: function(res) {
+      if(_.includes(res.config.url, 'api')) {
+        return res.data;
+      }
+      return res;
+    },
+
+    responseError: function(res) {
+      return $q.reject(res);
+    }
+  }
+}
 
 
 

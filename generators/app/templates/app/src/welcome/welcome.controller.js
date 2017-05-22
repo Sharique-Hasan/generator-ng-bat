@@ -3,8 +3,10 @@
 module.exports = controller;
 
 /* @ngInject */
-function controller($log) {
+function controller($log, toastr) {
   var vm = this;
+
+  toastr.success('Hello world!', 'Toastr fun!');
 
   vm.welcomeMessage = 'Yet another generator for angular powered by webpack.';
   vm.testFunction = testFunction;

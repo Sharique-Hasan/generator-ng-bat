@@ -1,6 +1,6 @@
 'use strict';
 
-require('./welcome.scss');
+require('./welcome.less');
 
 var name = module.exports = '<%= name %>.welcome';
 
